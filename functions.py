@@ -1,3 +1,5 @@
+import os
+
 from collections import OrderedDict
 from jinja2 import Environment, FileSystemLoader
 
@@ -31,6 +33,17 @@ def parser_yes_no(user_input):
 def allowed_values(values):
     def parser(user_input):
         if user_input in values:
+            return user_input
+        else:
+            raise ValueError
+
+    return parser
+
+
+def path_exists(prefix, suffix=''):
+    def parser(user_input):
+        path = os.path.join(prefix, user_input) + suffix
+        if os.path.exists(path):
             return user_input
         else:
             raise ValueError
