@@ -13,7 +13,7 @@ for user in /home/*/ ; do
     chsh -s /usr/bin/fish $user
 
     # Bootstrap kde sensible defaults
-    su -c "git clone git@github.com:mkrawiec/dotfiles.git ~/dotfiles" $user
+    su -c "git clone https://github.com/mkrawiec/dotfiles.git ~/dotfiles" $user
     su -c "~/dotfiles/kdeconfig.sh" $user
 done
 %end
