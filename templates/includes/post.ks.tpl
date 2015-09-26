@@ -8,13 +8,15 @@ dnf -y install http://sourceforge.net/projects/mscorefonts2/files/rpms/msttcore-
 
 dnf -y --allowerasing install neovim-symlinks
 
-for user in /home/*/ ; do
+for userdir in /home/*/ ; do
+    username=$(basename $user_dir)
+
     # Change shell to fish
-    chsh -s /usr/bin/fish $user
+    chsh -s /usr/bin/fish $username
 
     # Bootstrap kde sensible defaults
-    su -c "git clone https://github.com/mkrawiec/dotfiles.git ~/dotfiles" $user
-    su -c "~/dotfiles/kdeconfig.sh" $user
+    su -c "git clone https://github.com/mkrawiec/dotfiles.git ~/dotfiles" $username
+    su -c "~/dotfiles/kdeconfig.sh" $username
 done
 %end
 
