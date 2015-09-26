@@ -9,7 +9,7 @@ dnf -y install http://sourceforge.net/projects/mscorefonts2/files/rpms/msttcore-
 dnf -y --allowerasing install neovim-symlinks
 
 for userdir in /home/*/ ; do
-    username=$(basename $user_dir)
+    username=$(basename $userdir)
 
     # Change shell to fish
     chsh -s /usr/bin/fish $username
