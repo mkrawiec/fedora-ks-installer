@@ -14,16 +14,15 @@ def prompt_yes_no(label, default):
 
 
 # Parsers callbacks
-# They get user input as lower case and return parsed value
-# If user input whas blank they get default value
 def raw_data(user_input):
     return user_input
 
 
 def parser_yes_no(user_input):
-    if user_input == 'y':
+    lowercase = user_input.lower()
+    if lowercase == 'y':
         return True
-    elif user_input == 'n':
+    elif lowercase == 'n':
         return False
     else:
         raise ValueError
@@ -31,7 +30,7 @@ def parser_yes_no(user_input):
 
 def allowed_values(values):
     def parser(user_input):
-        if user_input in map(str.lower, values):
+        if user_input in values:
             return user_input
         else:
             raise ValueError
@@ -54,8 +53,7 @@ class SettingsRegistry(object):
             user_input = v['default']
 
         try:
-            input_str = str(user_input).lower()
-            v['parsed'] = v['parser'](input_str)
+            v['parsed'] = v['parser'](str(user_input))
         except ValueError:
             self.render_prompt(v)
 

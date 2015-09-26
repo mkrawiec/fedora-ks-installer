@@ -28,10 +28,10 @@ def main():
     })
 
     settings.add('installation_flavour', {
-        'label': 'Choose installation flavour (basic/KDE)',
+        'label': 'Choose installation flavour (basic/kde)',
         'prompt_type': prompt_simple,
-        'default': 'KDE',
-        'parser': allowed_values(['basic', 'KDE'])
+        'default': 'kde',
+        'parser': allowed_values(['basic', 'kde'])
     })
 
     settings.add('nvidia_drivers', {
