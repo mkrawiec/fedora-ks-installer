@@ -8,8 +8,8 @@ dnf -y install http://sourceforge.net/projects/mscorefonts2/files/rpms/msttcore-
 
 dnf -y --allowerasing install neovim-symlinks
 
-# Change shell to fish
 for user in /home/*/ ; do
+    # Change shell to fish
     chsh -s /usr/bin/fish $user
 
     # Bootstrap kde sensible defaults
