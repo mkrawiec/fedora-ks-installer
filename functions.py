@@ -55,6 +55,7 @@ class SettingsRegistry(object):
         try:
             v['parsed'] = v['parser'](str(user_input))
         except ValueError:
+            print("[!] Invalid input value")
             self.render_prompt(v)
 
     def render_all_prompts(self):
