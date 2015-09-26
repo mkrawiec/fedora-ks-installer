@@ -34,6 +34,13 @@ def main():
         'parser': path_exists(prefix='/usr/share/zoneinfo')
     })
 
+    settings.add('langpack', {
+        'label': 'Specify langpack for translation packages',
+        'prompt_type': prompt_simple,
+        'default': 'en',
+        'parser': path_exists(prefix='/usr/share/locale')
+    })
+
     settings.add('installation_flavour', {
         'label': 'Choose installation flavour (basic/kde)',
         'prompt_type': prompt_simple,
