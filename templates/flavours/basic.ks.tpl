@@ -17,6 +17,7 @@ fedora-release-workstation
 rpmfusion-free-release
 rpmfusion-nonfree-release
 dnf-plugin-system-upgrade
+dnf-langpacks
 
 
 # System utils
