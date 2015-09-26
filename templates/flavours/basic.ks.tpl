@@ -4,7 +4,7 @@
 # Packages provided by this flavour
 #
 
-%packages --instLangs={{ langpack }}
+%packages
 # System core
 -plymouth*
 syslinux-extlinux

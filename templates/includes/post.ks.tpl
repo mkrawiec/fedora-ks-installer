@@ -7,6 +7,7 @@
 dnf -y install http://sourceforge.net/projects/mscorefonts2/files/rpms/msttcore-fonts-installer-2.2-1.noarch.rpm
 
 dnf -y --allowerasing install neovim-symlinks
+dnf -y langinstall {{ langpack }}
 
 for userdir in /home/*/ ; do
     username=$(basename $userdir)
