@@ -3,7 +3,7 @@
 import os
 from subprocess import call
 from functions import (prompt_simple, prompt_yes_no, raw_data, allowed_values,
-                       parser_yes_no, SettingsRegistry, render)
+                       parser_yes_no, path_exists, SettingsRegistry, render)
 
 
 def main():
@@ -25,6 +25,13 @@ def main():
         'prompt_type': prompt_simple,
         'default': 'linux',
         'parser': raw_data
+    })
+
+    settings.add('timezone', {
+        'label': 'Enter timezone (tzdata format: Region/City)',
+        'prompt_type': prompt_simple,
+        'default': 'Etc/UTC',
+        'parser': path_exists(prefix='/usr/share/zoneinfo')
     })
 
     settings.add('installation_flavour', {

@@ -9,6 +9,7 @@ selinux --enforcing
 network --hostname={{ hostname }}.local
 firewall --enabled --service=dhcpv6-client,mdns,ntp,samba-client,transmission-client
 services --disabled=cups,smb,nmb,network,sshd --enabled=avahi-daemon,NetworkManager
+timezone --utc {{ timezone }}
 
 # Do not enforce password strength
 %anaconda
