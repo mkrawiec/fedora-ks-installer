@@ -12,6 +12,11 @@ dnf -y langinstall {{ langpack }}
 for userdir in /home/*/ ; do
     username=$(basename $userdir)
 
+    # Add user to sys group if he is already in wheel group
+    if grep -q wheel <<< "$(groups $username)"; then
+        gpasswd --add $username sys
+    fi
+
     # Change shell to fish
     chsh -s /usr/bin/fish $username
 
