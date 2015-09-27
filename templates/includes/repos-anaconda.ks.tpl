@@ -20,8 +20,10 @@ repo --name=rpmfusion-nonfree-updates --mirrorlist=http://mirrors.rpmfusion.org/
 # Copr repos
 repo --name=mkrawiec-home --baseurl=https://copr-be.cloud.fedoraproject.org/results/mkrawiec/home/fedora-{{ fedora_version }}-$basearch/
 repo --name=mkrawiec-neovim --baseurl=https://copr-be.cloud.fedoraproject.org/results/mkrawiec/neovim/fedora-{{ fedora_version }}-$basearch/
-repo --name=mkrawiec-infinality-ultimate --baseurl=https://copr-be.cloud.fedoraproject.org/results/mkrawiec/infinality-ultimate/fedora-{{ fedora_version }}-$basearch/
 repo --name=churchyard-chromium-russianfedora --baseurl=https://copr-be.cloud.fedoraproject.org/results/churchyard/chromium-russianfedora/fedora-{{ fedora_version }}-$basearch/
+
+# Infinality repo
+repo --name=mkrwc-infinality-ultimate --baseurl=http://download.opensuse.org/repositories/home:/mkrwc:/infinality-ultimate-fedora/Fedora_{{ fedora_version }}/
 
 {% if nvidia_drivers %}
 repo --name=fedora-nvidia --baseurl=http://negativo17.org/repos/nvidia/fedora-{{ fedora_version }}/$basearch/
