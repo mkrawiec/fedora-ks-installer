@@ -94,6 +94,7 @@ dejavu-sans-fonts
 dejavu-sans-mono-fonts
 dejavu-serif-fonts
 iosevka-fonts
+fontawesome-fonts
 
 
 {% if nvidia_driver %}
