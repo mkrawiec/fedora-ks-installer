@@ -7,7 +7,7 @@ bootloader --extlinux
 firstboot --disabled
 selinux --enforcing
 network --hostname={{ hostname }}.local
-firewall --enabled --service=dhcpv6-client,mdns,ntp,samba-client,transmission-client
+firewall --enabled --service=dhcpv6-client,mdns,ntp,samba,samba-client,transmission-client
 services --disabled=cups,smb,nmb,network,sshd --enabled=avahi-daemon,NetworkManager
 timezone --utc {{ timezone }}
 
