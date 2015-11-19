@@ -31,6 +31,8 @@ gwenview
 okular
 dolphin
 dolphin-plugins
+kamoso
+choqok
 ark
 
 
