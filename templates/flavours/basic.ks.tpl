@@ -66,6 +66,7 @@ zip
 
 # X.org
 @base-x
+xsel
 cairo-infinality-ultimate
 freetype-infinality-ultimate
 fontconfig-infinality-ultimate
