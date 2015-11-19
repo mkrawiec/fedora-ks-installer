@@ -14,10 +14,10 @@ def main():
     settings = SettingsRegistry()
 
     settings.add('fedora_version', {
-        'label': 'Choose Fedora version for the base system (22)',
+        'label': 'Choose Fedora version for the base system',
         'prompt_type': prompt_simple,
-        'default': '22',
-        'parser': allowed_values(['22'])
+        'default': '23',
+        'parser': allowed_values(['22', '23'])
     })
 
     settings.add('hostname', {
