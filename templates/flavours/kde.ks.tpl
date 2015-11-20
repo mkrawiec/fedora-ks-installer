@@ -45,7 +45,7 @@ mp3diags
 
 
 # Multimedia
-bomi
+baka-mplayer
 mpd
 mpdscribble
 cantata
