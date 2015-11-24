@@ -13,6 +13,7 @@ kernel-modules
 ca-certificates
 memtest86+
 deltarpm
+rpmconf
 NetworkManager-wifi
 fedora-release-workstation
 rpmfusion-free-release
