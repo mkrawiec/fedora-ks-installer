@@ -25,7 +25,7 @@ kmix
 kcalc
 ksnapshot
 kcolorchooser
-apper
+muon-discover
 konsole5
 gwenview
 okular
