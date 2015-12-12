@@ -13,6 +13,7 @@ plasma-nm
 plasma-pk-updates
 kde-style-breeze
 kde-gtk-config
+breeze-gtk
 kwalletmanager5
 ksshaskpass
 
