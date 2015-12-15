@@ -19,10 +19,12 @@ fedora-release-workstation
 dnf-plugin-system-upgrade
 dnf-langpacks
 
+
 # Repo releases
 rpmfusion-free-release
 rpmfusion-nonfree-release
 infinality-ultimate-repo
+
 
 # System utils
 sed
