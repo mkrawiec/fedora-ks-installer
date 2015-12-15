@@ -16,11 +16,13 @@ deltarpm
 rpmconf
 NetworkManager-wifi
 fedora-release-workstation
-rpmfusion-free-release
-rpmfusion-nonfree-release
 dnf-plugin-system-upgrade
 dnf-langpacks
 
+# Repo releases
+rpmfusion-free-release
+rpmfusion-nonfree-release
+infinality-ultimate-repo
 
 # System utils
 sed
