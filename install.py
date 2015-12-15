@@ -17,7 +17,7 @@ def main():
         'label': 'Choose Fedora version for the base system',
         'prompt_type': prompt_simple,
         'default': '23',
-        'parser': allowed_values(['22', '23'])
+        'parser': allowed_values(['23'])
     })
 
     settings.add('hostname', {
