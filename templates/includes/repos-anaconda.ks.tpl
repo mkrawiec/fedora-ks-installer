@@ -8,13 +8,19 @@ url --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-{{ fedo
 # Fedora updates
 repo --name=updates-released --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f{{ fedora_version }}&arch=$basearch
 
-# RPMFusion free
-repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-{{ fedora_version }}&arch=$basearch
+# RPMFusion free updates-testing
+repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-testing-{{ fedora_version }}&arch=$basearch
 
-# RPMFusion non-free
-repo --name=rpmfusion-nonfree --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-{{ fedora_version }}&arch=$basearch
+# RPMFusion non-free updates-testing
+repo --name=rpmfusion-nonfree --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-testing-{{ fedora_version }}&arch=$basearch
 
 # FIXME not released yet
+# RPMFusion free
+#repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-{{ fedora_version }}&arch=$basearch
+
+# RPMFusion non-free
+#repo --name=rpmfusion-nonfree --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-{{ fedora_version }}&arch=$basearch
+
 # RPMFusion updates free
 #repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-{{ fedora_version }}&arch=$basearch
 
