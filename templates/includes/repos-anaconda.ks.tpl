@@ -22,7 +22,7 @@ repo --name=rpmfusion-nonfree --mirrorlist=http://mirrors.rpmfusion.org/mirrorli
 #repo --name=rpmfusion-nonfree-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-{{ fedora_version }}&arch=$basearch
 
 # Chromium
-repo --name=chromium-stable --baseurl=https://repos.fedorapeople.org/repos/spot/chromium-stable/{{ fedora_version }}/$basearch/
+repo --name=chromium-stable --baseurl=https://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-{{ fedora_version  }}/$basearch/
 
 # Infinality Ultimate
 repo --name=infinality-ultimate --baseurl=http://rpm.danielrenninghoff.com/fedora/{{ fedora_version  }}/noarch/
