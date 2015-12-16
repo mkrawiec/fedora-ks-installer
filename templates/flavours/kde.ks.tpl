@@ -46,9 +46,9 @@ mp3diags
 
 
 # Multimedia
-baka-mplayer
-mpd
-mpdscribble
-cantata
+#baka-mplayer
+#mpd
+#mpdscribble
+#cantata
 {% endblock %}
 

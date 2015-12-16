@@ -64,7 +64,7 @@ samba-client
 
 # File archivers
 unar
-unrar
+#unrar
 p7zip
 zip
 
