@@ -6,7 +6,6 @@
 
 %packages
 # System core
--plymouth*
 syslinux-extlinux
 kernel
 kernel-modules
