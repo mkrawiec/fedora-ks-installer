@@ -47,7 +47,8 @@ mp3diags
 
 # Multimedia
 #baka-mplayer
-audacious
-audacious-plugins-freeworld
+#mpd
+#mpdscribble
+#cantata
 {% endblock %}
 
