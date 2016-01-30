@@ -16,6 +16,7 @@ kde-gtk-config
 breeze-gtk
 kwalletmanager5
 ksshaskpass
+kscreen
 
 
 # KDE apps
