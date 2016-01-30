@@ -7,6 +7,7 @@
 
 {% block packages %}
 # Plasma
+f{{ fedora_version  }}-backgrounds-extras-kde
 sddm
 plasma-desktop
 plasma-nm
