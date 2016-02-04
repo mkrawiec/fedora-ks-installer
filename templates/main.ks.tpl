@@ -17,7 +17,7 @@ pwpolicy user --notstrict
 pwpolicy root --notstrict
 %end
 
-{% include 'includes/repos-anaconda.ks.tpl' %}
+{% include 'includes/repos.ks.tpl' %}
 
 {% include 'flavours/%s.ks.tpl'|format(installation_flavour) %}
 
