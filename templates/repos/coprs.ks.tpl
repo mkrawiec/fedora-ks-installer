@@ -6,3 +6,9 @@ repo --name=mkrawiec-neovim --baseurl=https://copr-be.cloud.fedoraproject.org/re
 
 # churchyard/chromium-russianfedora
 repo --name=churchyard-chromium-russianfedora --baseurl=https://copr-be.cloud.fedoraproject.org/results/churchyard/chromium-russianfedora/fedora-$releasever-$basearch/
+
+%post --erroronfail
+dnf -y copr enable mkrawiec/home
+dnf -y copr enable mkrawiec/neovim
+dnf -y copr enable churchyard/chromium-russianfedora
+%end

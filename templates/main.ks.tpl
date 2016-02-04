@@ -21,6 +21,5 @@ pwpolicy root --notstrict
 
 {% include 'flavours/%s.ks.tpl'|format(installation_flavour) %}
 
-{% include 'includes/repos-system.ks.tpl' %}
 {% include 'includes/post.ks.tpl' %}
 
