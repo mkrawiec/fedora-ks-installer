@@ -29,6 +29,7 @@ infinality-ultimate-repo
 sed
 gawk
 tree
+psmisc
 colordiff
 lsof
 dos2unix
