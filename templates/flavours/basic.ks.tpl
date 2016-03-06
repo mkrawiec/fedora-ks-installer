@@ -41,6 +41,7 @@ smartmontools
 findutils
 xdg-utils
 xdg-user-dirs
+inxi
 
 
 # Filesystem progs
