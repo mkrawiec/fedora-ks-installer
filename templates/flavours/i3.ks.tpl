@@ -11,11 +11,14 @@ i3lock
 i3blocks
 compton
 dunst
+udiskie
 rofi
 scrot
 network-manager-applet
 xdotool
+dex-xdg
 ImageMagick
+xautolock
 
 
 weechat
@@ -25,13 +28,13 @@ htop
 ncdu
 mutt
 calcurse
+newsbeuter
 
 
 apvlv
 mpv
 polkit-gnome
 pavucontrol
-newsbeuter
 feh
 lxrandr
 viewnior
