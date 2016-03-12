@@ -81,10 +81,10 @@ class SettingsRegistry(object):
 
 def render(vars, tpl_dir, result_file):
     env = Environment(
-            loader=FileSystemLoader(tpl_dir),
-            trim_blocks=True,
-            line_statement_prefix=None,
-            line_comment_prefix=None,
+        loader=FileSystemLoader(tpl_dir),
+        trim_blocks=True,
+        line_statement_prefix=None,
+        line_comment_prefix=None,
     )
 
     contents = env.get_template('main.ks.tpl').render(vars)
