@@ -48,13 +48,6 @@ def main():
         'parser': allowed_values(['basic', 'kde'])
     })
 
-    settings.add('nvidia_drivers', {
-        'label': 'Do you want proprietary nVidia drivers?',
-        'prompt_type': prompt_yes_no,
-        'default': 'n',
-        'parser': parser_yes_no
-    })
-
     settings.render_all_prompts()
     render(settings.get(), tpl_dir, result_file)
     call(['sudo', 'anaconda', '--kickstart=' + result_file])

@@ -103,10 +103,6 @@ iosevka-fonts
 fontawesome-fonts
 
 
-{% if nvidia_driver %}
-nvidia-driver
-{% endif %}
-
 {% block packages %}
 {% endblock %}
 %end
