@@ -20,6 +20,13 @@ def main():
         'parser': allowed_values(['23'])
     })
 
+    settings.add('bootloader_type', {
+        'label': 'Choose bootloader for your system',
+        'prompt_type': prompt_simple,
+        'default': 'grub',
+        'parser': allowed_values(['grub', 'extlinux'])
+    })
+
     settings.add('hostname', {
         'label': 'Enter hostname',
         'prompt_type': prompt_simple,

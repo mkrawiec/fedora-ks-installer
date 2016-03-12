@@ -3,7 +3,9 @@
 #
 
 rootpw --lock
+{% if bootloader_type is 'extlinux' -%}
 bootloader --extlinux
+{%- endif %}
 firstboot --disabled
 selinux --disabled
 network --hostname={{ hostname }}.local
