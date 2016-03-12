@@ -126,4 +126,3 @@ for userdir in /home/*/ ; do
     chsh -s /usr/bin/fish $username
 done
 {% endpost %}
-

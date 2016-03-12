@@ -3,4 +3,3 @@ url --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-{{ fedo
 
 # updates
 repo --name=updates-released --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f{{ fedora_version }}&arch=$basearch
-

@@ -62,4 +62,3 @@ for userdir in /home/*/ ; do
     su -c "~/bin/configure-kde" $username
 done
 {% endpost %}
-

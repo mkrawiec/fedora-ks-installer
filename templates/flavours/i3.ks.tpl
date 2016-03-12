@@ -49,4 +49,3 @@ for userdir in /home/*/ ; do
     su -c "~/dotfiles/install neovim fish i3desktop mpd" $username
 done
 {% endpost %}
-

@@ -3,4 +3,3 @@ repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?
 
 # non-free
 repo --name=rpmfusion-nonfree --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-testing-{{ fedora_version }}&arch=$basearch
-
