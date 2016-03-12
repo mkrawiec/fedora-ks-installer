@@ -1,6 +1,6 @@
-{% extends 'flavours/basic.ks.tpl' %}
 {{ copr('mkrawiec', 'i3desktop') }}
 
+{% extends 'flavours/basic.ks.tpl' %}
 #
 # Packages provided by this flavour
 #
