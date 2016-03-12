@@ -1,4 +1,5 @@
 {% extends 'flavours/basic.ks.tpl' %}
+{{ copr('mkrawiec', 'i3desktop') }}
 
 #
 # Packages provided by this flavour
@@ -40,4 +41,12 @@ lxrandr
 viewnior
 chromium
 {% endblock %}
+
+{% post 5 %}
+for userdir in /home/*/ ; do
+    username=$(basename $userdir)
+    su -c "git clone https://github.com/mkrawiec/dotfiles.git ~/dotfiles" $username
+    su -c "~/dotfiles/install neovim fish i3desktop mpd" $username
+done
+{% endpost %}
 

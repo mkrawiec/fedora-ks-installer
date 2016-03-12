@@ -54,3 +54,12 @@ mpdscribble
 cantata
 {% endblock %}
 
+{% post 5 %}
+for userdir in /home/*/ ; do
+    username=$(basename $userdir)
+    su -c "git clone https://github.com/mkrawiec/dotfiles.git ~/dotfiles" $username
+    su -c "~/dotfiles/install neovim fish kde mpd" $username
+    su -c "~/bin/configure-kde" $username
+done
+{% endpost %}
+
