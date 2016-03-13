@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
-from pprint import pprint
-
 import os
 from subprocess import call
 
-from fki.config import Config
-from fki.renderer import PromptRenderer
-from fki.tpl import render_tpl
+from megaconda.config import Config
+from megaconda.renderer import PromptRenderer
+from megaconda.tpl import render_tpl
 
 config = Config('prompts.cfg')
 renderer = PromptRenderer()

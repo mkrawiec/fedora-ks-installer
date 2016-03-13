@@ -33,7 +33,7 @@ class PromptRenderer(object):
             self.render_prompt(v)
 
     def call(self, type, variant, *args, **kwargs):
-        module = import_module('.{0}s'.format(type), 'fki')
+        module = import_module('.{0}s'.format(type), 'megaconda')
         func = getattr(module, variant)
 
         return func(*args, **kwargs)
