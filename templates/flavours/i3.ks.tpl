@@ -1,4 +1,5 @@
-{{ copr('mkrawiec', 'i3desktop') }}
+{% import 'includes/macros.ks.tpl' as m %}
+{{ m.copr('mkrawiec', 'i3desktop') }}
 
 {% extends 'flavours/basic.ks.tpl' %}
 #

@@ -5,7 +5,7 @@
 rootpw --lock
 {% if bootloader_type == 'extlinux' -%}
 bootloader --extlinux
-{%- endif %}
+{% endif %}
 firstboot --disabled
 selinux --disabled
 network --hostname={{ hostname }}.local
@@ -19,10 +19,11 @@ pwpolicy user --notstrict
 pwpolicy root --notstrict
 %end
 
-{% include 'includes/macros.ks.tpl' %}
 {% include 'includes/repos.ks.tpl' %}
 
 {% include 'flavours/%s.ks.tpl'|format(installation_flavour) %}
 
+% post --erroronfail
 {% renderpost %}
+% end
 
