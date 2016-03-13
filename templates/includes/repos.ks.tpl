@@ -11,7 +11,7 @@
 {% include 'repos/rpmfusion-updates-testing.ks.tpl' %}
 {% endif %}
 
-{% import 'includes/macros.ks.tpl' as m %}
-{{ m.copr('mkrawiec', 'home') }}
-{{ m.copr('mkrawiec', 'neovim') }}
-{{ m.copr('churchyard', 'chromium-russianfedora') }}
+{% from 'includes/macros.ks.tpl' import copr with context %}
+{{ copr('mkrawiec', 'home') }}
+{{ copr('mkrawiec', 'neovim') }}
+{{ copr('churchyard', 'chromium-russianfedora') }}
