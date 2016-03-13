@@ -1,4 +1,5 @@
 from jinja2 import Environment, FileSystemLoader
+from .post import PostExtension
 
 
 def render_tpl(vars, tpl_dir, result_file):
@@ -7,6 +8,7 @@ def render_tpl(vars, tpl_dir, result_file):
         trim_blocks=True,
         line_statement_prefix=None,
         line_comment_prefix=None,
+        extensions=[PostExtension]
     )
 
     contents = env.get_template('main.ks.tpl').render(vars)
