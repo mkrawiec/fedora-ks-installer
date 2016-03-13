@@ -33,6 +33,7 @@ calcurse
 newsbeuter
 
 
+termite
 apvlv
 mpv
 polkit-gnome
