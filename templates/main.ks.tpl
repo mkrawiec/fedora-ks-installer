@@ -23,7 +23,7 @@ pwpolicy root --notstrict
 
 {% include 'flavours/%s.ks.tpl'|format(installation_flavour) %}
 
-% post --erroronfail
+%post --erroronfail
 {% renderpost %}
-% end
+%end
 
