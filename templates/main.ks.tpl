@@ -3,7 +3,7 @@
 #
 
 rootpw --lock
-{% if bootloader_type is 'extlinux' -%}
+{% if bootloader_type == 'extlinux' -%}
 bootloader --extlinux
 {%- endif %}
 firstboot --disabled
