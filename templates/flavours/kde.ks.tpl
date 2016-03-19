@@ -26,7 +26,7 @@ kde-partitionmanager
 ksysguard
 kmix
 kcalc
-ksnapshot
+spectacle
 kcolorchooser
 muon-discover
 konsole5
