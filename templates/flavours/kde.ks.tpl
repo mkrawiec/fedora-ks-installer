@@ -48,7 +48,9 @@ mp3diags
 
 
 # Multimedia
-mpv
+vlc
+phonon-backend-vlc
+phonon-qt5-backend-vlc
 mpd
 mpdscribble
 cantata
