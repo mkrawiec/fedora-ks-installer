@@ -48,10 +48,10 @@ mp3diags
 
 
 # Multimedia
-vlc
-phonon-backend-vlc
-phonon-qt5-backend-vlc
-mpd
+#vlc
+#phonon-backend-vlc
+#phonon-qt5-backend-vlc
+#mpd
 mpdscribble
 cantata
 {% endblock %}
