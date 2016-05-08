@@ -26,6 +26,7 @@ kde-partitionmanager
 ksysguard
 kmix
 kcalc
+kinfocenter
 spectacle
 kcolorchooser
 muon-discover
