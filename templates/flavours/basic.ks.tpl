@@ -35,6 +35,7 @@ lsof
 dos2unix
 avahi
 nss-mdns
+sysfsutils
 pciutils
 usbutils
 smartmontools

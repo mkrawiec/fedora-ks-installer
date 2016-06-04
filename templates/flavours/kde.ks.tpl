@@ -18,6 +18,7 @@ breeze-gtk
 kwalletmanager5
 ksshaskpass
 kscreen
+bluedevil
 
 
 # KDE apps
@@ -45,13 +46,11 @@ chromium
 neovim-qt
 transmission-qt
 quiterss
-mp3diags
+picard
 
 
 # Multimedia
-vlc
-phonon-backend-vlc
-phonon-qt5-backend-vlc
+mpv
 mpd
 mpdscribble
 cantata
