@@ -1,11 +1,8 @@
-{% extends 'flavours/basic.ks.tpl' %}
-{% block xconfig %}xconfig --startxonboot --defaultdesktop=KDE{% endblock %}
+{% from 'flavours/basic/packages.ks.tpl' import packages as basic %}
 
-#
-# Packages provided by this flavour
-#
+{% set packages %}
+{{ basic }}
 
-{% block packages %}
 # Plasma
 f{{ fedora_version  }}-backgrounds-extras-kde
 sddm
@@ -20,12 +17,10 @@ ksshaskpass
 kscreen
 bluedevil
 
-
 # KDE apps
 kde-print-manager
 kde-partitionmanager
 ksysguard
-kmix
 kcalc
 kinfocenter
 spectacle
@@ -40,27 +35,19 @@ kamoso
 choqok
 ark
 
-
 # User apps
 chromium
+trojita
 neovim-qt
 transmission-qt
 quiterss
 picard
-
+cutemarked
+scudcloud
 
 # Multimedia
 mpv
 mpd
 mpdscribble
 cantata
-{% endblock %}
-
-{% post 5 %}
-for userdir in /home/*/ ; do
-    username=$(basename $userdir)
-    su -c "git clone https://github.com/mkrawiec/dotfiles.git ~/dotfiles" $username
-    su -c "~/dotfiles/install neovim fish kde mpd" $username
-    su -c "~/bin/configure-kde" $username
-done
-{% endpost %}
+{% endset %}

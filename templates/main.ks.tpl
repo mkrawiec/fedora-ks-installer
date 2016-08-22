@@ -2,6 +2,8 @@
 # Custom Anaconda installation file (Flavour: {{ installation_flavour }})
 #
 
+{% from 'includes/macros.ks.tpl' import copr, each_user with context %}
+
 rootpw --lock
 {% if bootloader_type == 'extlinux' -%}
 bootloader --extlinux
@@ -20,10 +22,8 @@ pwpolicy root --notstrict
 %end
 
 {% include 'includes/repos.ks.tpl' %}
-
-{% include 'flavours/%s.ks.tpl'|format(installation_flavour) %}
+{% include 'flavours/flavour.ks.tpl' %}
 
 %post --erroronfail
 {% renderpost %}
 %end
-
