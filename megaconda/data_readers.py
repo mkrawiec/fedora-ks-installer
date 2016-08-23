@@ -2,7 +2,7 @@ from collections import OrderedDict
 from configparser import ConfigParser
 
 
-class Config(object):
+class PromptData(object):
 
     def __init__(self, filename):
         config = ConfigParser()
@@ -17,6 +17,18 @@ class Config(object):
             result[section]['args'] = {key: raw_dict[key] for key in args}
 
         self.result = result
+
+    def get_data(self):
+        return self.result
+
+
+class ConstData(object):
+
+    def __init__(self, filename):
+        parser = ConfigParser()
+        parser.read(filename)
+
+        self.result = dict(parser.items('consts'))
 
     def get_data(self):
         return self.result

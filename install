@@ -3,19 +3,22 @@
 import os
 from subprocess import call
 
-from megaconda.config import Config
+from megaconda.data_readers import PromptData, ConstData
 from megaconda.renderer import PromptRenderer
 from megaconda.tpl import render_tpl
 
-config = Config('prompts.cfg')
+prompts = PromptData('prompts.cfg')
+consts = ConstData('consts.cfg')
 renderer = PromptRenderer()
 
-renderer.load_prompts(config.get_data())
+renderer.load_prompts(prompts.get_data())
 renderer.render_all()
 
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 tpl_dir = os.path.join(curr_dir, 'templates')
 result_file = os.path.join(curr_dir, 'main.ks')
 
-render_tpl(renderer.get_input(), tpl_dir, result_file)
+concated = {**renderer.get_input(), **consts.get_data()}
+
+render_tpl(concated, tpl_dir, result_file)
 call(['sudo', 'anaconda', '--kickstart=' + result_file])
