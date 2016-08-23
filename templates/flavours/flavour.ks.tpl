@@ -2,7 +2,7 @@
 {% from 'flavours/%s/settings.ks.tpl'|format(installation_flavour) import xconfig, extra_coprs, stow_dotfiles, flavour_post %}
 
 {% for copr_data in extra_coprs %}
-    {{ copr(*copr_data) }}
+{{ copr(*copr_data) }}
 {% endfor %}
 
 # Configure graphical/text interface
