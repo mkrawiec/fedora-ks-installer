@@ -8,6 +8,7 @@ budgie-desktop
 lightdm-gtk3
 light-locker
 network-manager-applet
+arc-theme
 
 # System
 system-config-firewall
