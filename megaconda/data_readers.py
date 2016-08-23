@@ -5,13 +5,13 @@ from configparser import ConfigParser
 class PromptData(object):
 
     def __init__(self, filename):
-        config = ConfigParser()
-        config.read(filename)
+        parser = ConfigParser()
+        parser.read(filename)
         required_keys = ['label', 'type', 'default', 'parser']
         result = OrderedDict()
 
         for section in config.sections():
-            raw_dict = dict(config.items(section))
+            raw_dict = dict(parser.items(section))
             result[section] = {key: raw_dict[key] for key in required_keys}
             args = set(result[section]) ^ set(raw_dict)
             result[section]['args'] = {key: raw_dict[key] for key in args}
