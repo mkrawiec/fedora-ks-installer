@@ -10,7 +10,7 @@ class PromptData(object):
         required_keys = ['label', 'type', 'default', 'parser']
         result = OrderedDict()
 
-        for section in config.sections():
+        for section in parser.sections():
             raw_dict = dict(parser.items(section))
             result[section] = {key: raw_dict[key] for key in required_keys}
             args = set(result[section]) ^ set(raw_dict)
