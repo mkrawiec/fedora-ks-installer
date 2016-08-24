@@ -9,7 +9,7 @@
 {{ xconfig }}
 
 # Install flavour's packages
-%packages
+%packages --excludeWeakdeps
 {{ packages }}
 %end
 
