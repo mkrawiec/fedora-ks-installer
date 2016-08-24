@@ -5,7 +5,7 @@
 
 # Core
 budgie-desktop
-lightdm-gtk3
+lightdm-gtk
 light-locker
 network-manager-applet
 arc-theme
@@ -24,7 +24,7 @@ gnome-calculator
 gnome-color-manager
 gnome-system-monitor
 gnome-tweak-tool
-gnome-disc-utility
+gnome-disk-utility
 gnome-screenshot
 gnome-power-manager
 gnome-todo
@@ -50,7 +50,7 @@ scudcloud
 nautilus-extensions
 gnome-terminal-nautilus
 evince-nautilus
-file-nautilus
+file-roller-nautilus
 totem-nautilus
 
 # Multimedia
