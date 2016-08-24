@@ -4,6 +4,7 @@
 {{ basic }}
 
 # Core
+f{{ fedora_version  }}-backgrounds-extras-gnome
 budgie-desktop
 lightdm-gtk
 light-locker
@@ -11,8 +12,7 @@ network-manager-applet
 arc-theme
 
 # System
-system-config-firewall
-system-config-printer
+firewall-config
 policycoreutils-gui
 setroubleshoot
 
@@ -21,15 +21,15 @@ gnome-software
 gnome-terminal
 gnome-characters
 gnome-calculator
+gnome-clocks
 gnome-color-manager
 gnome-system-monitor
-gnome-tweak-tool
 gnome-disk-utility
 gnome-screenshot
 gnome-power-manager
 gnome-todo
 polkit-gnome
-dconf
+dconf-editor
 seahorse
 
 # Utility
