@@ -9,7 +9,10 @@ budgie-desktop
 lightdm-gtk
 light-locker
 network-manager-applet
-arc-theme
+arc-theme-gtk*
+arc-theme-metacity
+faba-icon-theme
+moka-icon-theme
 
 # System
 firewall-config
@@ -22,6 +25,7 @@ gnome-terminal
 gnome-characters
 gnome-calculator
 gnome-clocks
+gnome-music
 gnome-color-manager
 gnome-system-monitor
 gnome-disk-utility
@@ -41,6 +45,8 @@ california
 transmission-gtk
 feedreader
 corebird
+totem
+gpick
 eog
 file-roller
 evince
@@ -52,10 +58,6 @@ gnome-terminal-nautilus
 evince-nautilus
 file-roller-nautilus
 totem-nautilus
-
-# Multimedia
-totem
-rhythmbox
 
 # Gstreamer
 gstreamer1-vaapi
