@@ -1,4 +1,4 @@
-{% from 'flavours/%s/packages.ks.tpl'|format(installation_flavour) import packages %}
+{% from 'flavours/%s/packages.ks.tpl'|format(installation_flavour) import packages with context %}
 {% from 'flavours/%s/settings.ks.tpl'|format(installation_flavour) import xconfig, extra_coprs, stow_dotfiles, flavour_post %}
 
 {% for copr_data in extra_coprs %}
