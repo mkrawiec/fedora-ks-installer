@@ -63,6 +63,7 @@ zip
 # X.org
 @base-x
 -xorg-x11-drv-synaptics
+-xorg-x11-drv-evdev
 xorg-x11-drv-libinput
 xsel
 cairo-infinality-ultimate
