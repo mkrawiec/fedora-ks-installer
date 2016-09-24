@@ -8,7 +8,7 @@ f{{ fedora_version  }}-backgrounds-extras-gnome
 gnome-shell
 gdm
 arc-theme-gtk*
-arc-theme-metacity
+arc-theme-gnome-shell
 faba-icon-theme
 moka-icon-theme
 
