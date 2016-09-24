@@ -5,10 +5,8 @@
 
 # Core
 f{{ fedora_version  }}-backgrounds-extras-gnome
-budgie-desktop
-lightdm-gtk
-light-locker
-network-manager-applet
+gnome-shell
+gdm
 arc-theme-gtk*
 arc-theme-metacity
 faba-icon-theme
@@ -32,7 +30,8 @@ gnome-disk-utility
 gnome-screenshot
 gnome-power-manager
 gnome-todo
-polkit-gnome
+gnome-calendar
+gnome-tweak-tool
 dconf-editor
 seahorse
 
@@ -41,13 +40,13 @@ chromium
 fedora-user-agent-chrome
 epiphany
 geary
-california
 transmission-gtk
 feedreader
 corebird
 totem
 gpick
 eog
+baobab
 file-roller
 evince
 scudcloud
