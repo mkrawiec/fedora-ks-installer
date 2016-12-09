@@ -19,6 +19,7 @@ rpmfusion-nonfree-release
 # System utils
 sed
 gawk
+the_silver_searcher
 tree
 psmisc
 colordiff
@@ -35,6 +36,7 @@ xdg-utils
 xdg-user-dirs
 screenfetch
 inxi
+iotop
 
 # Filesystem progs
 ntfs-3g

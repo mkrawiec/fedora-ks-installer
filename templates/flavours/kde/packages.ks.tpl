@@ -13,6 +13,7 @@ kde-style-breeze
 kde-gtk-config
 breeze-gtk
 kwalletmanager5
+pinentry-qt
 ksshaskpass
 kscreen
 bluedevil
@@ -25,7 +26,7 @@ kcalc
 kinfocenter
 spectacle
 kcolorchooser
-muon-discover
+plasma-discover
 konsole5
 gwenview
 okular
@@ -34,6 +35,7 @@ dolphin-plugins
 kamoso
 choqok
 ark
+qtpass
 
 # User apps
 chromium
