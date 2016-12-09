@@ -4,7 +4,5 @@
 
 {% include 'repos/rpmfusion-updates.ks.tpl' %}
 
-{% include 'repos/infinality-ultimate.ks.tpl' %}
-
 {{ copr('mkrawiec', 'home') }}
 {{ copr('mkrawiec', 'neovim') }}

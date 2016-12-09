@@ -15,7 +15,6 @@ dnf-langpacks
 # Repo releases
 rpmfusion-free-release
 rpmfusion-nonfree-release
-infinality-ultimate-repo
 
 # System utils
 sed
@@ -66,9 +65,6 @@ zip
 -xorg-x11-drv-evdev
 xorg-x11-drv-libinput
 xsel
-cairo-infinality-ultimate
-freetype-infinality-ultimate
-fontconfig-infinality-ultimate
 
 # Multimedia
 alsa-firmware
