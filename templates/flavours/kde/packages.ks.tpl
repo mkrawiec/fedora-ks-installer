@@ -5,7 +5,7 @@
 
 # Plasma
 f{{ fedora_version  }}-backgrounds-extras-kde
-sddm
+sddm-breeze
 plasma-desktop
 plasma-nm
 plasma-pk-updates

@@ -9,8 +9,8 @@ deltarpm
 rpmconf
 NetworkManager-wifi
 fedora-release-workstation
-dnf-plugin-system-upgrade
-dnf-langpacks
+python3-dnf-plugin-system-upgrade
+python3-dnf-plugin-versionlock
 
 # Repo releases
 rpmfusion-free-release
